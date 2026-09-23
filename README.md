@@ -109,8 +109,29 @@ This project demonstrates:
 * Security event investigation
 
 ## Project Evidence
+### Wazuh Agent - Active
 
-Screenshots and evidence from the lab will be added to document the deployment, agent registration, configuration, and security alerts.
+![Wazuh Agent](agent-active.png.png)
+
+Windows 11 endpoint successfully connected to Wazuh and shown as **Active**.
+
+### Vulnerability Detection
+
+![Vulnerability Detection](vulnerability-detection.png.png)
+
+Wazuh detected **1 Medium-severity vulnerability** on the Windows 11 endpoint.
+
+* **CVE:** CVE-2022-0815
+* **Severity:** Medium
+* **Affected OS:** Windows 11 Home 10.0.26200.9168
+* **Affected Agent:** LAPTOP-0KT83JSE
+
+### File Integrity Monitoring
+
+![FIM Alert](fim-alert.png.png)
+
+Wazuh detected a modification to a monitored file with the alert **"Integrity checksum changed"** (Rule Level 7).
+
 
 ## Future Improvements
 
